@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#272727">
+
+    <ImageView
+        android:id="@+id/zoom"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/zoom" />
+
+
+    <ImageView
+        android:id="@+id/man"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/man"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="23dp"/>
+
+
+    <TextView
+        android:id="@+id/bestCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoom"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="46dp"
+        android:text="Find the best \ncoffee for you"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/bestCoffee"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/search" />
+
+    <TextView
+        android:id="@+id/capp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:text="Cappucino"
+        android:textColor="#FDC312"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/findCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bestCoffee"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="63dp"
+        android:layout_toRightOf="@id/search"
+        android:text="Find your Coffee.."
+        android:textColor="#7A7A7A"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/latte"
+        android:text="Black"
+        android:textColor="#5F5F5F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/latte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/capp"
+        android:text="Latte"
+        android:textColor="#5F5F5F"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/black"
+        android:text="Milk"
+        android:textStyle="bold"
+        android:textColor="#5F5F5F"
+        android:textSize="20sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="160dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/capp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/coffe1"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coffee" />
+
+            <TextView
+                android:id="@+id/head1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cappucino"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/coffe1"
+                android:textSize="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/smallHead1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="with milk"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/priceCapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/smallHead1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="$5.01"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/plus1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/coffe1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="53dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/plus" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="160dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/milk"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="28dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/coffe2"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coffee1" />
+
+
+
+            <TextView
+                android:id="@+id/head2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latte"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/coffe2"
+                android:textSize="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/smallHead2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="with sugar"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/priceCapp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/smallHead2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="$4.50"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/coffe2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="53dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/plus" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/card1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/home" />
+
+
+    <ImageView
+        android:id="@+id/bag"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/card1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@id/home"
+        android:src="@drawable/bag" />
+
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/card1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="58dp"
+        android:layout_toRightOf="@id/bag"
+        android:src="@drawable/heart" />
+
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/card1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="58dp"
+        android:layout_toRightOf="@id/heart"
+        android:src="@drawable/notification" />
+
+
+
+
+
+
+</RelativeLayout>
